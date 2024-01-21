@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript colorChanger() Hands-On</title>
+<link rel="stylesheet" href="B.css">
+    <style>
+        #colorDiv {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript colorChanger() Hands-On</h1>
+
+  
+    <div id="colorDiv" ></div>
+  <button id="colorButton" >Click Me</button>
+
+    <script>
+        document.getElementById("colorButton").addEventListener("click", function() {
+            let colorDiv = document.getElementById("colorDiv");
+
+            if (colorDiv.style.backgroundColor === "green") {
+                colorDiv.style.backgroundColor = "blue";
+            } else {
+                colorDiv.style.backgroundColor = "green";
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+  background-color: black;
+}
+h1{
+  display: inline-block;
+  font-family:Arial;
+  border:2px double pink;
+  padding: 15px;
+  position:relative;
+  top: 100px;
+  left: 20%;
+  color: white;
+  border-radius:0 50px 0 50px ;
+  
+  animation: hed1 5s infinite;
+  animation-direction: alternate;
+ 
+}
+@keyframes hed1{
+  0%{
+text-shadow: 2px 2px 2px lightgreen,-2px -2px 2px lightblue,-2px 2px 2px lightgreen,2px -2px 2px lightblue;
+box-shadow:0 0px 5px  #73f9e8;
+  }
+  33%{
+text-shadow: 2px 2px 2px lightgreen,-2px -2px 2px lightgreen,-2px 2px 2px lightblue,2px -2px 2px lightblue;
+box-shadow:0px 0px 5px 5px #73f9e8;
+  }
+  67%{
+text-shadow: 2px 2px 2px lightblue,-2px -2px 2px lightblue,-2px 2px 2px lightgreen,2px -2px 2px lightgreen;
+box-shadow:0 0px 5px #73f9e8;
+  }
+  100%{
+text-shadow: 2px 2px 2px lightblue,-2px -2px 2px lightgreen,-2px 2px 2px lightblue,2px -2px 2px lightgreen;
+box-shadow:0px 0 5px 5px #73f9e8;
+  }
+}
+#colorDiv{
+  width: 50%;
+  height: 150px;
+  background-color: green;
+  position: relative;
+  top: 100px;
+  left: 22%;
+  border: 2px double white;
+  border-radius: 35px;
+  margin-bottom: 15px;
+  animation: hed1 5s infinite;
+  animation-direction:alternate;
+}
+#colorButton{
+  width: 20%;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  left: 35%;
+  background-color: grey;
+  border: 2px solid white;
+  border-radius: 30px;
+  animation: butto 5s infinite;
+  animation-direction: alternate;
+}
+@keyframes butto{
+  0%{
+box-shadow: 3px 3px 5px 2px #00f439,-3px -3px 5px 2px #2925f0,3px -1px 5px 2px #2925f0,-1px 3px 5px 2px #00f439;
+  }
+  100%{
+box-shadow: 3px 3px 5px 2px #2925f0,-3px -3px 5px 2px #00f439,3px -1px 5px 2px #2925f0,-1px 3px 5px 2px #00f439;
+  }
+}
+#colorButton:active{
+  top: 105px;
+  box-shadow: 0 1px 1px rgba(0,0,0,01);
+}
+
+@media only screen and (max-width: 767px){
+  h1{padding:15px;
+    left: 1%;
+    text-align: center;
+    font-size: 19px;
+  }
+  #colorDiv{
+    width: 95%;
+    left: 1%;
+  }
+  #colorButton{
+    left: 30%;
+    width:40%;
+    
+  }
+}
