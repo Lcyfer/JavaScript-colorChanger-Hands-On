@@ -57,7 +57,7 @@ box-shadow:0px 0 5px 5px #73f9e8;
   background-color: grey;
   border: 2px solid white;
   border-radius: 30px;
-  animation: butto 5s infinite;
+  animation: butto 2s infinite;
   animation-direction: alternate;
 }
 @keyframes butto{
